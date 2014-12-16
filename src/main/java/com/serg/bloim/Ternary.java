@@ -3,7 +3,7 @@ package com.serg.bloim;
 /**
  * @author sergey.belonozhko@hp.com
  */
-public class Trinary
+public class Ternary
 {
     private int temp()
     {
@@ -14,17 +14,19 @@ public class Trinary
     {
         if(true)
         {
-            return null;  // The same is not possible with if, and causes a compile-time error - incompatible types.
+            System.out.println("crash the system");
+//            return null;  // The same is not possible with if, and causes a compile-time error - incompatible types.
         }
         else
         {
             return 0;
         }
+        return -1;
     }
 
     public static void main(String[] args)
     {
-        Trinary m=new Trinary();
+        Ternary m=new Ternary();
         System.out.println(m.temp());
         System.out.println(m.same());
     }
